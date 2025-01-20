@@ -1,53 +1,69 @@
-# Sorteador de Amigo Secreto Simples
+# 🔢 Jogo do Número Secreto 🤫
 
-Este projeto é um sorteador de amigo secreto minimalista, desenvolvido utilizando HTML, CSS e JavaScript puros. Ele permite que você realize um sorteio rápido e fácil para a sua troca de presentes.
+Este é um jogo simples e divertido onde você precisa adivinhar um número secreto sorteado aleatoriamente! 🤔 O jogo te dará dicas quentinhas 🔥 ou frias 🥶 se o seu chute for maior ou menor que o número secreto. Prepare-se para testar sua intuição! 😉
 
-## Como Funciona
+**🚀 Experimente o jogo agora:** [Link do Jogo](https://assismayko.github.io/jogo-do-numero-secreto/)
 
-O projeto consiste em uma página web com um único botão, que ao ser clicado, realiza o sorteio.
+## 🎮 Como Jogar
 
-### Código-fonte
+Ao iniciar o jogo, uma mensagem na tela te dará as boas-vindas e pedirá para escolher um número entre 1 e 10. 👋
 
-O botão de sorteio é implementado da seguinte forma em HTML:
+Insira o número que você acha que é o número secreto no campo de texto. ⌨️
 
-```html
-<div class="button-container">
-    <button class="button-draw" onclick="sortearAmigo()" aria-label="Sortear amigo secreto">
-        <img src="assets/play_circle_outline.png" alt="Ícone para sortear">
-        Sortear amigo
-    </button>
-</div>
-content_copy
-download
-Use code with caution.
-Markdown
+Clique no botão "Chutar" para verificar seu palpite. 🎯
 
-O botão possui:
+O jogo te dirá se o número secreto é maior (⬆️) ou menor (⬇️) que o seu palpite.
 
-class="button-draw": Para estilização via CSS.
+Continue tentando até acertar o número secreto! 💪
 
-onclick="sortearAmigo()": Uma função Javascript, que deve ser implementada, que dispara o processo de sorteio.
+Quando você acertar, uma mensagem de parabéns 🎉 aparecerá junto com a quantidade de tentativas que você usou para acertar. 🏆
 
-aria-label="Sortear amigo secreto": Atributo que melhora a acessibilidade, fornecendo uma descrição do botão para leitores de tela.
+Um botão de "Reiniciar" será habilitado para iniciar um novo jogo. 🔄
 
-img src="assets/play_circle_outline.png": Uma imagem de um ícone para dar melhor clareza.
+## ✨ Funcionalidades
 
-Sortear amigo: Label do botão visível para os usuários.
+### 🎲 Geração de Número Secreto
 
-O JavaScript associado a este botão, responsável pela lógica do sorteio, deve ser implementado no arquivo script.js ou similar, e não foi incluído neste trecho.
+Um número aleatório entre 1 e 10 é gerado no início de cada jogo.
 
-Como Usar
+### 🔒 Limitação de Números
 
-Clone o repositório:
+O jogo usa um sistema inteligente que garante que o número secreto não seja repetido até que todos os números possíveis (de 1 a 10) tenham sido usados.
 
-git clone https://github.com/assismayko/jogo-do-numero-secreto
-content_copy
-download
-Use code with caution.
-Bash
+### 🗣️ Feedback
 
-Abra o arquivo index.html em seu navegador.
+O jogo informa ao jogador se o chute foi muito alto (⬆️) ou muito baixo (⬇️).
 
-Clique no botão "Sortear amigo" para realizar o sorteio.
+### ⏱️ Contador de Tentativas
 
-Contribuições são bem-vindas! Se você tiver alguma sugestão de melhoria, correção de bugs ou novas funcionalidades, sinta-se à vontade para abrir uma issue ou um pull request.
+O jogo conta quantas tentativas foram usadas para acertar o número secreto.
+
+### 🔄 Reinício
+
+É possível reiniciar o jogo a qualquer momento após acertar o número secreto, gerando um novo número aleatório.
+
+### 🔊 Saída de Voz
+
+O jogo conta com saída de voz para que todos possam participar, em especial crianças não alfabetizadas. 👧🧒
+
+## 🛠️ Ferramentas Utilizadas
+
+Este jogo foi desenvolvido utilizando as seguintes ferramentas:
+
+### HTML
+
+Para a estrutura e conteúdo da página. 🧱
+
+### CSS
+
+Para a estilização e apresentação visual. 🎨
+
+### JavaScript
+
+Para a lógica do jogo e funcionalidades interativas. 💻
+
+### Responsive Voice API
+
+Para a funcionalidade de saída de voz. 🗣️
+
+Divirta-se jogando e boa sorte! 🍀
